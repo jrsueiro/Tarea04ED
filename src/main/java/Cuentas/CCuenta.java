@@ -45,24 +45,24 @@ public class CCuenta {
     }
 
     /**
-     * @return the tipoInterés
+     * @return the tipoInteres
      */
-    public double getTipoInterés() {
-        return tipoInterés;
+    public double getTipoInteres() {
+        return tipoInteres;
     }
 
     /**
-     * @param tipoInterés the tipoInterés to set
+     * @param tipoInteres the tipoInteres to set
      */
-    public void setTipoInterés(double tipoInterés) {
-        this.tipoInterés = tipoInterés;
+    public void setTipoInteres(double tipoInteres) {
+        this.tipoInteres = tipoInteres;
     }
 
 
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
     public CCuenta()
     {
