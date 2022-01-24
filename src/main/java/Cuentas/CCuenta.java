@@ -63,6 +63,14 @@ public class CCuenta {
     private String cuenta;
     private double saldo;
     private double tipoInteres;
+    
+    
+    /**
+     * Clase CCuenta que a partir de las variables nombre, cuenta y
+     * saldo permite registrar un ingreso o retirada de dinero de la
+     * cuenta.
+     */
+    
 
     public CCuenta()
     {
@@ -74,11 +82,22 @@ public class CCuenta {
         cuenta=cue;
         saldo=sal;
     }
-
+    
+    
+    /**
+     * @return the getSaldo
+     */
+   
     public double estado()
     {
         return getSaldo();
     }
+    
+    /**
+     * Si la cantidad a ingresar es negativa imprime  "No se puede ingresar
+     * una cantidad negativa".
+     * El saldo se incrementará en el importe ingresado, @cantidad.
+     */
 
     public void ingresar(double cantidad) throws Exception
     {
@@ -86,6 +105,14 @@ public class CCuenta {
             throw new Exception("No se puede ingresar una cantidad negativa");
         setSaldo(getSaldo() + cantidad);
     }
+    
+    /**
+     * Si la cantidad a retirar es negativa o igual a cero imprime  
+     * "No se puede retirar una cantidad negativa".
+     * Si el saldo actual @estado() es menor que la cantidad a retirar @cantidad,
+     * se imprimirá "No se hay suficiente saldo".
+     * El saldo disminuirá en el importe retirado, @cantidad.
+     */
 
     public void retirar(double cantidad) throws Exception
     {
